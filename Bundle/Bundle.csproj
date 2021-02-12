@@ -140,6 +140,7 @@
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\comum\debug\debug.js" />
     <Content Include="Scripts\comum\debug\display.js" />
+    <Content Include="Scripts\comum\debug\setup.bdg.js" />
     <Content Include="Scripts\comum\exemplo.js" />
     <Content Include="Scripts\comum\setup.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

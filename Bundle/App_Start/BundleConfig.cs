@@ -14,6 +14,14 @@ namespace Bundle
             //~/comum é o diretório virtual que vc referencia na view; true é para poder pegar todas as subpastas do diretório 
             // especificado em ~/Scripts/comum
 
+            //exemplo para ignorar alguns scripts
+            bundles.IgnoreList.Ignore("*.bdg.js");
+
+            var ordem = new BundleFileSetOrdering("meuScript");
+            ordem.Files.Add("setup.js");
+            ordem.Files.Add("display.js");
+            bundles.FileSetOrderList.Insert(0, ordem);
+
 
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include( //~/bundles/jquery é o diretório virtual que vc referencia na view
                         "~/Scripts/jquery-{version}.js"));
