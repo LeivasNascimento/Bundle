@@ -11,8 +11,11 @@ namespace Bundle
             BundleTable.EnableOptimizations = true; //todas as ref abaixo vão ser 'compactadas' e usáveis na aplicação
 
             bundles.Add(new ScriptBundle("~/comum").IncludeDirectory("~/Scripts/comum", "*.js", true));
+            //~/comum é o diretório virtual que vc referencia na view; true é para poder pegar todas as subpastas do diretório 
+            // especificado em ~/Scripts/comum
 
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+
+            bundles.Add(new ScriptBundle("~/bundles/jquery").Include( //~/bundles/jquery é o diretório virtual que vc referencia na view
                         "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
